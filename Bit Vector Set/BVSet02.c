@@ -8,7 +8,7 @@ typedef struct {
     unsigned int field : 8;
 } Set;
 
-// Initialize by clearing all bits
+// Initialize by clearing all bitss
 void initialize(Set *set) {
     set->field = 0;
 }
