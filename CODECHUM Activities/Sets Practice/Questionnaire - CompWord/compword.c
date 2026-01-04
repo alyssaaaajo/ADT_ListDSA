@@ -17,4 +17,4 @@ CompWord intersectProfiles(CompWord a, CompWord b);
 CompWord differenceProfiles(CompWord a, CompWord b);
 
 
-#endif // COMPWORD_H
+#endif // COMPWORD_HH
