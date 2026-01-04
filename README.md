@@ -3,7 +3,7 @@
 <h1>Data Structures and Algorithms (DSA) – C Language</h1>
 
 The repository was created 4 months ago and recently updated and finalized.
-Supporting .txt files were added on January 4, 2025 to help readers better understand each implementation.
+Supporting .txt files and codes straight from CODECHUM activities were added on January 4, 2025 to help readers better understand each implementation.
 
 This repository is a compiled collection of Data Structures and Algorithms (DSA) implementations in C.
 It serves as both a learning archive and a reference for students studying fundamental DSA concepts.
