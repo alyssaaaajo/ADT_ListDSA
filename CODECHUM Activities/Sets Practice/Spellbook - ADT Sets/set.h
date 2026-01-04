@@ -31,4 +31,4 @@ void destroySet(Set* set);
 Set* unionSets(Set* set1, Set* set2);
 Set* intersectSets(Set* set1, Set* set2);
 
-#endif // SET_H
+#endif // SET_HH
