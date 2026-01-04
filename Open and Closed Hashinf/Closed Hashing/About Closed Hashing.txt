@@ -1,37 +1,26 @@
-Closed hashing, also known as open addressing, is a hashing technique in which all keys are stored directly inside the hash table. When a collision occurs, the algorithm searches for another available slot within the table using a probing method such as linear probing, quadratic probing, or double hashing. No additional memory structures are used for collision handling. Deletion is managed using a special marker to maintain correct search behavior. As the table becomes more occupied, performance decreases due to longer probe sequences.
+Closed hashing, also known as open addressing, is a hashing technique inwhich all keys are stored directly inside the hash table.
+When a collision occurs, the algorithm searches for another available slot within the table using a probing method such
+as linear probing, quadratic probing, or double hashing. No additional memory structures are used for collision handling.
+Deletion is managed using a special marker to maintain correct search behavior. As the table becomes more occupied,
+performance decreases due to longer probe sequences.
 
-<h1>LINEAR HASHING (Linear Probing)</h1>
+=== LINEAR HASHING (Linear Probing) ===
+- Closed hashing technique
+- Resolves collisions by checking the next sequential slot
+- Table is treated as circular
+- Uses a DELETED marker for removals
+- Prone to primary clustering
 
-Closed hashing technique
+=== BUCKET HASHING ===
+- Hash table is divided into fixed-size buckets
+- Each bucket represents a range of indices
+- Keys are stored within the bucket range
+- Collision handling is limited to the bucket
+- Bucket overflow occurs when the bucket is full
 
-Resolves collisions by checking the next sequential slot
-
-Table is treated as circular
-
-Uses a DELETED marker for removals
-
-Prone to primary clustering
-
-BUCKET HASHING
-
-Hash table is divided into fixed-size buckets
-
-Each bucket represents a range of indices
-
-Keys are stored within the bucket range
-
-Collision handling is limited to the bucket
-
-Bucket overflow occurs when the bucket is full
-
-PROGRESSIVE OVERFLOW
-
-Hash table is divided into primary and secondary areas
-
-Primary area stores elements using the hash function
-
-Collisions are handled using linked overflow nodes
-
-Overflow space is allocated progressively
-
-Reduces clustering but requires pointer management
+=== PROGRESSIVE OVERFLOW ===
+- Hash table is divided into primary and secondary areas
+- Primary area stores elements using the hash function
+- Collisions are handled using linked overflow nodes
+- Overflow space is allocated progressively
+- Reduces clustering but requires pointer management
